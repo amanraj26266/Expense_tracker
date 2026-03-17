@@ -1,0 +1,32 @@
+.charts-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chart-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.doughnut-wrapper {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+}
